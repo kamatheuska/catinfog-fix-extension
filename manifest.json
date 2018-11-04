@@ -1,0 +1,42 @@
+{
+    "name": "Catinfog CSS Changer",
+    "version": "1.0",
+    "description": "Build an Extension!",
+    "manifest_version": 2,
+    "content_scripts": [
+        {
+            "matches": [
+                "*://matiz.catinfog.com/*"
+            ],
+            "js": [
+                "popup.js"
+            ]
+        }
+    ],
+    "background": {
+        "scripts": [
+            "background.js"
+        ],
+        "persistent": false
+    },
+    "permissions": [
+        "activeTab",
+        "storage",
+        "tabs",
+        "declarativeContent"
+    ],
+    "page_action": {
+        "default_popup": "popup.html",
+        "defalut_title": "Catinfog Formatter",
+        "default_icon": {
+            "16": "images/logo2.png",
+            "24": "images/logo2.png",
+            "32": "images/logo2.png"
+        },
+        "icon": {
+            "16": "images/logo2.png",
+            "24": "images/logo2.png",
+            "32": "images/logo2.png"
+        }
+    }
+}

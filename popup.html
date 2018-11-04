@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="css/resetStyles.css">
+	<meta charset="UTF-8">
+	<title>Extension</title>
+	<style>
+		.container__main {
+			height: 100%;
+			width: 100%;
+			padding: 1rem 3rem;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+		.button {
+			margin-top: 10px;
+		}
+		.button:hover {
+			background-color: #29b98e;
+			color: #fff;
+			border: none;
+		}
+	</style>
+</head>
+
+<body>
+	<main class="container__main">
+		<button class="button" id="button__search">Cambiar a Buscar</button>
+		<button class="button" id="button__sell">Cambiar a Venta</button>
+	</main>
+	<script src="popup.js"></script>
+</body>
+
+</html>
